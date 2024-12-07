@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias MujerFintech</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="icon" th:href="@{https://mujerfintech.com/wp-content/uploads/2024/03/cropped-cropped-FINTECH-PERU-2-1-32x32.png}" sizes="32x32">
+
+<!-- SweetAlert2 CSS -->
+<link th:href="@{https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css}" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script	th:src="@{https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js}"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>Noticias Observatorio MujerFintech</h1>
+		<p class="subtitulo">Mantente al día con las noticias más
+			relevantes para las mujeres emprendedoras y en negocios.</p>
+	</header>
+
+	<main>
+		<h2 class="titulobody">De nuestro interés</h2>
+
+		<!-- Paginación encima de las noticias -->
+		<div id="paginacion-arriba" class="paginacion-container"></div>
+
+		<button id="buscarMasNoticias" class="boton-scrapear">Buscar más noticias</button>
+
+		<div id="noticias" class="noticias-container">
+			<!-- Las noticias se insertan aquí dinámicamente -->
+		</div>
+
+		<!-- Paginación debajo de las noticias -->
+		<div id="paginacion-abajo" class="paginacion-container">
+			<!-- Los botones de paginación se agregarán aquí dinámicamente -->
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 MujerFintech - CERTUS</p>
+	</footer>
+
+	<script src="/js/functions.js"></script>
+
+</body>
+</html>
